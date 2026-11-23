@@ -9,7 +9,7 @@ package object imperative {
 
   object optOldAliasing extends inox.FlagOptionDef("old-aliasing", false)
 
-  object optHeapMaxChanges extends inox.IntOptionDef("heap-max-changes", 20, "<PosInt>")
+  object optHeapMaxChanges extends inox.IntOptionDef("heap-max-changes", 80, "<PosInt>")
 
   object trees extends imperative.Trees with oo.ClassSymbols {
     case class Symbols(
